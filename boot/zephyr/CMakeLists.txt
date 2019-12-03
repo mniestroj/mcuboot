@@ -20,7 +20,8 @@ if(DTC_OVERLAY_FILE)
     CACHE STRING "" FORCE
     )
 else()
-  set(DTC_OVERLAY_FILE ${CMAKE_CURRENT_LIST_DIR}/dts.overlay)
+  set(DTC_OVERLAY_FILE ${CMAKE_CURRENT_LIST_DIR}/dts.overlay
+    CACHE STRING "" FORCE)
 endif()
 
 if (EXISTS ${CMAKE_CURRENT_LIST_DIR}/boards/${BOARD}.overlay)
